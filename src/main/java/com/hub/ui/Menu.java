@@ -39,7 +39,7 @@ public class Menu implements IMenuItem {
     }
 
     private void printMenu() {
-        System.out.println("\n=== " + label.toUpperCase() + " ===");
+        System.out.println("\n===== " + label.toUpperCase() + " =====");
         for (int i = 0; i < items.size(); i++) {
             System.out.println((i + 1) + ". " + items.get(i).getLabel());
         }
