@@ -3,10 +3,12 @@ package com.hub.algorithms.sorting;
 public class BubbleSort {
     /* * Lý thuyết:
      * Bubble Sort là một thuật toán sắp xếp dựa trên so sánh đơn giản.
-     * Nó lặp đi lặp lại các bước duyệt qua danh sách, so sánh các phần tử liền kề,
-     * và hoán đổi chúng nếu chúng sai thứ tự. Quá trình này lặp lại cho đến khi danh sách được sắp xếp.
-     * * Nó được gọi là Bubble Sort vì các phần tử nhỏ hơn "nổi" lên đầu danh sách,
-     * và các phần tử lớn hơn chìm xuống đáy.
+     * Nó lặp đi lặp lại các bước duyệt qua danh sách, so sánh các phần tử liền kề, và hoán đổi chúng nếu chúng sai thứ tự. Quá trình này lặp lại cho đến khi danh sách được sắp xếp.
+     * Nó được gọi là Bubble Sort vì các phần tử nhỏ hơn "nổi" lên đầu danh sách, và các phần tử lớn hơn chìm xuống đáy.
+     * Time Complexity:
+     * - Best-case: O(n) - Khi mảng đã được sắp xếp, chỉ cần duyệt qua một lần để xác nhận.
+     * - Average-case: O(n^2) - Khi mảng có phần tử được sắp xếp ngẫu nhiên.
+     * - Worst-case: O(n^2) - Khi mảng được sắp xếp ngược lại.
      */
     public static void bubbleSort(int[] arr) {
         int length = arr.length;

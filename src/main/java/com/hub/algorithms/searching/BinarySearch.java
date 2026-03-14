@@ -3,12 +3,15 @@ package com.hub.algorithms.searching;
 public class BinarySearch {
     /*
      * Lý thuyết:
-     * Binary Search là một thuật toán tìm kiếm hiệu quả hoạt động trên các mảng đã
-     * được sắp xếp.
+     * Binary Search là một thuật toán tìm kiếm hiệu quả hoạt động trên các mảng đã được sắp xếp.
      * Nó lặp đi lặp lại việc chia khoảng tìm kiếm làm đôi.
-     * Nếu giá trị của khóa tìm kiếm nhỏ hơn phần tử ở giữa khoảng, thu hẹp khoảng
-     * xuống nửa dưới;
-     * ngược lại, thu hẹp nó lên nửa trên.
+     * Nếu giá trị của khóa tìm kiếm nhỏ hơn phần tử ở giữa khoảng, thu hẹp khoảng xuống nửa dưới;
+     * Ngược lại, thu hẹp nó lên nửa trên.
+     *
+     * Time Complexity:
+     * - Best-case: O(1) - Khi phần tử cần tìm nằm ở giữa mảng.
+     * - Average-case: O(log n) - Khi phần tử cần tìm nằm ở một vị trí ngẫu nhiên trong mảng.
+     * - Worst-case: O(log n) - Khi phần tử cần tìm không tồn tại hoặc nằm ở cuối mảng.
      */
 
     public static int binarySearch(int[] arr, int target) {
