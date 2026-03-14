@@ -4,6 +4,7 @@ import com.hub.demos.dynamic_programming.FibonacciSequenceDemo;
 import com.hub.demos.searching.BinarySearchDemo;
 import com.hub.demos.sorting.BubbleSortDemo;
 import com.hub.demos.sorting.MergeSortDemo;
+import com.hub.demos.sorting.SelectionSortDemo;
 import com.hub.ui.Menu;
 
 public class Main {
@@ -12,6 +13,7 @@ public class Main {
         Menu sortMenu = new Menu("Sorting Algorithms");
         sortMenu.addItem(new BubbleSortDemo());
         sortMenu.addItem(new MergeSortDemo());
+        sortMenu.addItem(new SelectionSortDemo());
 
         // 2. Tạo Menu con: Searching
         Menu searchMenu = new Menu("Searching Algorithms");
