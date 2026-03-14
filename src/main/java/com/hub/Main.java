@@ -1,5 +1,6 @@
 package com.hub;
 
+import com.hub.demos.dynamic_programming.FibonacciSequenceDemo;
 import com.hub.demos.searching.BinarySearchDemo;
 import com.hub.demos.sorting.BubbleSortDemo;
 import com.hub.demos.sorting.MergeSortDemo;
@@ -16,12 +17,17 @@ public class Main {
         Menu searchMenu = new Menu("Searching Algorithms");
         searchMenu.addItem(new BinarySearchDemo());
 
-        // 3. Tạo Menu Gốc (Main Menu)
+        // 3. Tạo Menu con: Dynamic Programming
+        Menu dpMenu = new Menu("Dynamic Programming Algorithms");
+        dpMenu.addItem(new FibonacciSequenceDemo());
+
+        // 4. Tạo Menu Gốc (Main Menu)
         Menu mainMenu = new Menu("ALGORITHM HUB");
         mainMenu.addItem(sortMenu);
         mainMenu.addItem(searchMenu);
+        mainMenu.addItem(dpMenu);
 
-        // 4. Chạy Menu Gốc
+        // 5. Chạy Menu Gốc
         mainMenu.execute();
     }
 }
